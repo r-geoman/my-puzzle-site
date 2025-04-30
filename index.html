@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой пазл</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Убираем прокрутку страницы */
+            background-color: #f0f0f0;
+        }
+        .puzzle-container {
+            width: 100vw; /* Полная ширина экрана */
+            height: 100vh; /* Полная высота экрана */
+            overflow: hidden; /* Скрываем всё, что выходит за границы */
+        }
+        iframe {
+            width: 100%; /* Делаем фрейм шире экрана */
+            height: 110%; /* Делаем фрейм выше экрана */
+            border: none; /* Без рамки */
+            transform: translateY(-100px); /* Смещаем вверх, чтобы скрыть верхнюю часть */
+            display: block;
+        }
+        @media (max-width: 600px) {
+            iframe {
+                width: 200%; /* Ещё больше увеличиваем для мобильных */
+                height: 200%;
+                transform: translateY(-50px); /* Меньше смещение для мобильных */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="puzzle-container">
+        <iframe src="https://www.jigidi.com/solve/jg4ywrz6/30-04-2025-13-17-12/" title="Пазл Jigidi"></iframe>
+    </div>
+</body>
+</html>
